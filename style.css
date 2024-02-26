@@ -6,18 +6,23 @@
 .main{
     /* width: 80%; */
     padding: 20px;
-    margin: 100px auto 50px;
+    margin: 50px auto 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
+    /* position: fixed; */
     
 }
 .main img{
     width: 100%;
+    padding-bottom: 15%;
     cursor: pointer;
     transition: 0.4s;
+    
 }
 .main img:hover{
+    border: 5px lightseagreen solid;
+    padding: 5%;
     transform: scale(0.8) rotate(-15deg);
     border-radius: 20px;
     box-shadow: 0 32px 75px rgba(68, 77,136, 0.2);
@@ -45,4 +50,13 @@
     font-size: 30px;
     color: #fff;
     cursor: pointer;
+}
+.bg{
+    width: 100%;
+    height: 120vh;
+    background-image: url(bg.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 20px;
 }
